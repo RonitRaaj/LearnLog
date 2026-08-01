@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f5f3;
+  --card: #fbf7f2;
+  --accent: #ff1d15;
+  --tag: #ffe3cd;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: #111827;
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+
+.heading {
+  font-family: "Phudu", cursive;
+}
+
+/* Chrome, Edge, Safari */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+
+html {
+  scrollbar-width: none;
+}
+
+/* Internet Explorer */
+
+body {
+  -ms-overflow-style: none;
+}
