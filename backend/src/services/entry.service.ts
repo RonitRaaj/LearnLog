@@ -25,6 +25,7 @@ export async function createEntry(data: CreateEntry) {
     id: uuid(),
     createdAt: new Date().toISOString(),
     ...data,
+    category: data.category?.toUpperCase(),
   };
 
   await db.insert(entries).values(entry);
